@@ -359,7 +359,7 @@ public class AnalizadorSintactico {
                     } else {
                         System.out.println("Error se esperaba R_LLAVE o VACIO");
                         contErrores++;
-                        while (!"R_LLAVE".equals(entrada.get(0))) {
+                        while (!"R_LLAVE".equals(entrada.get(0)) && !"EOF".equals(entrada.get(0))) {
                             entrada.remove(0);
                         }
                     }
